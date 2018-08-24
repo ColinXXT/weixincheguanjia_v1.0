@@ -102,11 +102,6 @@ Page({
             code: res.code
           },
           success: function (res) {
-            if (res.data.code == 10000) {
-              // 去注册
-              that.registerUser();
-              return;
-            }
             if (res.data.code != 0) {
               // 登录错误
               wx.hideLoading();
@@ -125,28 +120,5 @@ Page({
         })
       }
     })
-  },
-  // registerUser: function () {
-  //   var that = this;
-  //   wx.login({
-  //     success: function (res) {
-  //       var code = res.code; // 微信登录接口返回的 code 参数，下面注册接口需要用到
-  //       wx.getUserInfo({
-  //         success: function (res) {
-  //           var iv = res.iv;
-  //           var encryptedData = res.encryptedData;
-  //           // 下面开始调用注册接口
-  //           wx.request({
-  //             url: '',
-  //             data: { code: code, encryptedData: encryptedData, iv: iv }, // 设置请求的 参数
-  //             success: (res) => {
-  //               wx.hideLoading();
-  //               that.login();
-  //             }
-  //           })
-  //         }
-  //       })
-  //     }
-  //   })
-  // }
+  }
 })

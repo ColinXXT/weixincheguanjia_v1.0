@@ -166,7 +166,9 @@ console.log("onLoad in cheguohu")
       modalFlag1: false
     })
   },
-  
+  /**
+   * 监听车牌键盘输入动作
+   */
   inputChange:function(e){
     console.log("input behavior")
 
@@ -182,6 +184,9 @@ console.log("onLoad in cheguohu")
     })
     console.log(this.data.carnumber);
   },
+  /**
+   * 监听车牌键盘删除动作
+   */
   inputdelete:function(){
     console.log("delect")
     let carnumber = this.data.carnumber;
@@ -203,7 +208,9 @@ console.log("onLoad in cheguohu")
       keyBoardType:2
     })
   },
-
+  /**
+   * 监听单选框
+   */
   radioChange: function (e) {
     var self = this;
     if(e.detail.value=="Y"){
@@ -216,9 +223,15 @@ console.log("onLoad in cheguohu")
       })
     }
   },
+  /**
+   * 提交订单 
+   */
   submit:function(e){
-console.info(this)
+    console.info(this)
   },
+  /**
+   * 监听日期 - picker
+   */
 bindMultiPickerChange: function(e) {
   var that = this;
   that.setData({
@@ -226,6 +239,9 @@ bindMultiPickerChange: function(e) {
     "multiIndex[1]": e.detail.value[1]
   })
 },
+/**
+   * 监听日期 - picker
+   */
 bindMultiPickerColumnChange: function (e) {
   var that = this;
   switch (e.detail.column) {
@@ -244,15 +260,17 @@ bindMultiPickerColumnChange: function (e) {
 
   }
   },
-
+  /**
+   * 监听日期 - picker
+   */
   bindDateChange: function (e) {
     console.log(e.detail.value)
     this.setData({
       dates: e.detail.value
     })
   },
-  /**
-   * 用户点击右上角分享
+   /**
+   * 监听省市区三级联动键盘
    */
   bindChange: function (e) {
     //console.log(e);
@@ -312,16 +330,25 @@ bindMultiPickerColumnChange: function (e) {
 
 
   },
+   /**
+   * 监听省市区三级联动键盘
+   */
   open: function () {
     this.setData({
       condition: !this.data.condition
     })
   },
+  /**
+   * 监听车牌键盘
+   */
   keyBoard:function(){
     this.setData({
       isShow: !this.data.isShow
     })
   },
+  /**
+   * 用户点击右上角分享
+   */
   onShareAppMessage: function () {
   
   }

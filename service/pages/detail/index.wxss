@@ -1,4 +1,4 @@
-@import '../../wxParse/wxParse.wxss';
+@import '../../temp/wxParse/wxParse.wxss';
 
 .detail{
 	background: #fff;

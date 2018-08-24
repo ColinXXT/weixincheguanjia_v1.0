@@ -4,14 +4,10 @@
     "pages/index/index",
     "pages/order-list/index",
     "pages/my/index",
-    "pages/service/service",
     "pages/authorize/index",
-    "pages/switchcity/switchcity",
     "pages/detail/index",
-    "pages/search/index",
     "pages/driverLicense/index",
-    "pages/cheguohu/index",
-    "pages/wzlist/index"
+    "pages/cheguohu/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

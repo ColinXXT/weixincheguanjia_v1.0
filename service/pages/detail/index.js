@@ -1,4 +1,4 @@
-var WxParse = require('../../wxParse/wxParse.js');
+var WxParse = require('../../temp/wxParse/wxParse.js');
 var app = getApp();
 
 Page({

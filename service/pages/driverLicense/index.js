@@ -35,32 +35,12 @@ Page({
   onLoad: function (options) {
   
   },
-  switchTab(e) {
-    const self = this;
-   
-    this.setData({
-      isScroll: true
-    })
-    setTimeout(function () {
-      self.setData({
-        toView: e.target.dataset.id,
-        curIndex: e.target.dataset.index
-      })
-    }, 0)
-
-    setTimeout(function () {
-      self.setData({
-        isScroll: false
-      })
-    }, 1)
-
-  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    var self = this;
+    
    
   },
 
@@ -99,6 +79,9 @@ Page({
   
   },
 
+  /**
+   * Picker
+   */
   bindPickerChange: function (e) {
     this.setData({
       areaIndex: e.detail.value,
@@ -111,6 +94,10 @@ Page({
       licenceValue: this.data.licence[e.detail.value]
     })
   },
+
+  /**
+   * 监听model
+   */
   modalOk: function(){
     this.setData({
       modalFlag: true,
@@ -118,6 +105,10 @@ Page({
       modalFlag2:true
     })
   },
+
+  /**
+   * 监听model
+   */
   showItem: function(e){
     var self = this;
         self.setData({
@@ -141,6 +132,10 @@ Page({
     }, 3000)
     
   },
+
+  /**
+   * 监听键盘输入事件
+   */
   carInput:function(e){
     let val = e.target.dataset.id;
     console.log(e)
@@ -163,6 +158,9 @@ Page({
     }
   },
 
+  /**
+   * 查询事件
+   */
   search:function(){
     if (this.data.chepaiValue=="") {
       wx.showModal({
@@ -193,7 +191,7 @@ Page({
     setTimeout(function () {
       wx.hideToast();
       wx.navigateTo({
-        url: "/pages/wzlist/index?detail=" +""
+        url: "/pages/detail/index?detail=" +""
       })
 
     }, 2000)

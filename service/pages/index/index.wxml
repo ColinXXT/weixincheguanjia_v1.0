@@ -16,15 +16,6 @@
             </block>  
         </view>  
    </view>
-   <!--city seleter-->
-    <!-- <view class="search-view" style="background:{{ scrollTop === 0 ?'-webkit-linear-gradient(top, rgba(105,195,170, 1), rgba(105,195,170, 0.3))' :( scrollTop<200 ? 'rgba(105,195,170,'+(scrollTop/400+0.3) +')' : 'rgba(105,195,170,1)')  }} ">
-    <view class="search-content">
-      <image src="/images/more/place.png" class="search-icon" />
-      <navigator url="/pages/switchcity/switchcity?city={{index_city}}" hover-class="navigator-hover">
-          <view class="notice_iteml">{{index_city}}</view>
-      </navigator>
-    </view>
-  </view> -->
 </view>
 <!--autoPlay-->
 <!--Category-->
@@ -53,33 +44,6 @@
 
 </view>
 <view style="height:20rpx;background: #eee;width:100%;"></view>
-<!--Category-->
-<!--serviceList
-  <view class="my-item">
-  <image  class = "left" src = "../../images/cate/footer1.jpg"mode = "widthFix" />
-    <navigator url="../driverLicense/index" hover-class="navigator-hover">驾驶证
-     <view class="notice_iteml2">期满换证、丢失损坏、降低准驾车型、他省迁入</view>
-    </navigator>
-  </view>
-  <view class="my-item">
-  <image  class = "left" src = "../../images/cate/footer2.jpg"mode = "widthFix" />
-    <navigator url="/pages/order-list/index" hover-class="navigator-hover">行驶证 车辆登记证 车牌
-     <view class="notice_iteml2">丢失、损毁</view>
-    </navigator>
-  </view>
-  <view class="my-item">
-  <image  class = "left" src = "../../images/cate/footer5.jpg"mode = "widthFix" />
-    <navigator url="../order-list/index" hover-class="navigator-hover">异地年假委托书</navigator>
-  </view>
-  <view class="my-item">
-  <image  class = "left" src = "../../images/cate/footer3.jpg" mode = "widthFix" />
-    <navigator url="../order-list/index" hover-class="navigator-hover">车辆抵押、解押</navigator>
-  </view>
- <view class="my-item">
- <image  class = "left" src = "../../images/cate/icon-more.png" mode = "widthFix" />
-    <text bindtap="moreServices">更多服务</text>
-  </view>
-  serviceList-->
 
   <!--banner-->
   <view class="cate-banner">
@@ -170,47 +134,4 @@
         <view class='journey_text1'>完成订单</view>
     </view> 
   </view>
-  <!--serviceJourney-->
-
-  <!--GoodServers
-<view class="svc">
-    <view class='svc_text'>金牌车顾问</view>
-</view>
- <view class="Grid">
-      <view class="Grid-cell5">
-      <image src='../../images/svrs/1.jpeg'/>
-        <text>金晟恩 \n</text>
-        <text>接单量</text><text style='color:#ff9f15;'>200</text><text>单\n</text>
-        <image class='svc_stars' src='../../images/svrs/star-y.png'/>   
-      </view>
-      <view class="Grid-cell5">
-      <image src='../../images/svrs/2.jpeg'/>
-        <text>秦欣然 \n</text>
-        <text>接单量</text><text style='color:#ff9f15;'>205</text><text>单\n</text>
-        <image class='svc_stars' src='../../images/svrs/star-y.png'/>  
-      </view>
- </view>     
- <view class="Grid">
-      <view class="Grid-cell5">
-      <image src='../../images/svrs/3.jpeg'/>
-        <text>任立明 \n</text>
-        <text>接单量</text><text style='color:#ff9f15;'>210</text><text>单\n</text>
-        <image class='svc_stars' src='../../images/svrs/star-y.png'/>  
-      </view>
-      <view class="Grid-cell5">
-      <image src='../../images/svrs/4.jpg'/>
-        <text>孙加林 \n</text>
-        <text>接单量</text><text style='color:#ff9f15;'>195</text><text>单\n</text>
-        <image class='svc_stars' src='../../images/svrs/star-y.png'/>  
-      </view>
- </view>   -->
-   <!--GoodServers-->
-   <!--T&C
-<view class="cate-banner1">
-    <image src="../../images/svrs/bm-slogan.png"></image>            
-  </view>
-<view class="copyright">
-  <text style='color:#3fabf4;'>斑马车务</text>隶属于车网天下（北京）汽车技术服务有限公司，是一站式车务O2O服务平台！斑马车务全面服务于个人车主、4S店、二手车商、租车公司及各类用车单位，提供新车上牌、车辆过户、年检验车、证件补办等业务的标准化服务，让车务办理更简单、更透明、更快捷，免去您来回奔波之苦，避免黑中介的灰色收费。创始团队来自易车网、汽车之家等知名互联网公司，公司全体员工以“专业、合作、创新”的服务理念，正在努力使斑马车务成长为国内最具影响力、公信度的车务办理平台。
-  </view>
-  <!--T&C-->
    

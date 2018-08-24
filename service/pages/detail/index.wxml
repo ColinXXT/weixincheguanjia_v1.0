@@ -1,4 +1,4 @@
-<import src="../../wxParse/wxParse.wxml" />
+<import src="../../temp/wxParse/wxParse.wxml" />
 
 <view class="detail">
 	<template is="header" data="{{item: item}}" />

@@ -37,7 +37,6 @@ Component({
       switch (val) {
         case 'delete':
           this.triggerEvent('delete');
-          // this.triggerEvent('inputchange');
           break;
         case 'ok':
           this.triggerEvent('ok');

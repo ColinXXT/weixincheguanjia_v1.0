@@ -1,6 +1,4 @@
- <!--banner-->
  <view wx:if="{{condition}}"  style="display:{{hideview ? none : flex}};flex-direction: row;">
-  <!--banner-->
   <view class='main'>
   <view class="note">
          <view class="journey_text">请按照《机动车行驶证》中的信息填写</view>
