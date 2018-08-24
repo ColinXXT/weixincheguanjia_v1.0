@@ -1,0 +1,46 @@
+ <view class="categroy-right">
+ <scroll-view scroll-y="{{isScroll}}" scroll-into-view="{{toView}}" scroll-with-animation="true">
+         <block wx:for="{{detail}}" wx:for-index wx:key="idx">
+            <view id="{{item.id}}" class="cate-box">
+                <view class="product">
+                    <view class="product-list" wx:for="{{item.detail}}" wx:key="index" wx:for-item="val">
+                        <navigator url="../search/index?name={{val.name}}">
+                            <image src="{{val.thumb}}"></image>
+                            <view class="classname"><text>{{val.name}}</text></view>
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+        </block> 
+    </scroll-view>
+    </view>
+<view style="height:20rpx;background: #eee;width:100%;"></view>
+
+<!--servicesList-->
+<view class="container">
+  <view class="page-body">
+    <view class="filter-wrap">
+      <view class="filter-item-title">
+        <view class="split"></view>
+        <text class="title">车务知识</text>
+        <view class="split"></view>
+      </view>
+      <view class="InfoItemList b-list">
+  <view class="list-item" wx:for="{{serviceList}}" wx:key="{{item.id}}" data-book="{{item}}" bindtap="gotoDetail">
+     <view class="b-item-img">
+      <image src="../../images/svrs/svrs.jpg" alt="{{item.title}}"></image>
+    </view>
+    <view class="b-item-right">
+      <text class="b-item-des">{{item.des}}</text>
+      <view class="b-item-info">
+        <text class="b-item-type">{{item.date}}</text>
+      </view>
+    </view> 
+  </view> 
+  <view bindtap="loadMore" class="b-view-more">更多...</view>
+</view>
+    </view>
+  </view>
+</view>
+
+<!--servicesList-->

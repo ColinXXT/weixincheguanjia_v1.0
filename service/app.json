@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+    "pages/order-list/index",
+    "pages/my/index",
+    "pages/service/service",
+    "pages/authorize/index",
+    "pages/switchcity/switchcity",
+    "pages/detail/index",
+    "pages/search/index",
+    "pages/driverLicense/index",
+    "pages/cheguohu/index",
+    "pages/wzlist/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#53C0FB",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "box-shadow": "0 0 6px 0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/nav/sy.png",
+        "selectedIconPath": "images/nav/sy-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "iconPath": "images/nav/zs.png",
+        "selectedIconPath": "images/nav/zs-active.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

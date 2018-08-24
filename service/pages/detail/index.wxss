@@ -1,0 +1,43 @@
+@import '../../wxParse/wxParse.wxss';
+
+.detail{
+	background: #fff;
+	min-height: 100%;
+	font-size: 14px;
+	font-family: "microsoft yahei";
+  padding: 10px;
+}
+
+.title{
+	font-size: 16px;
+    color: #323232;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+.content{
+	padding: 10rpx;
+	white-space: pre-line;
+}
+
+.notice_iteml {
+font-size:26rpx;
+line-height:50rpx;
+color:#999;
+text-align:left;
+}
+
+.notice_iteml1 {
+font-size:26rpx;
+line-height:50rpx;
+color:#999;
+text-align:right;
+}
+
+.Grid {
+  display: flex;
+}
+.Grid-cell {
+  flex: 1;
+  text-align: center;
+}
+

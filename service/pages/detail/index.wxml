@@ -1,0 +1,22 @@
+<import src="../../wxParse/wxParse.wxml" />
+
+<view class="detail">
+	<template is="header" data="{{item: item}}" />
+	<view class="content">
+		<view class="title">
+			{{item.title}}
+		</view>
+    <view class="Grid">
+     <view class="Grid-cell">
+      <view class="notice_iteml">{{item.auther}}</view>
+     </view>
+     <view class="Grid-cell">
+        <view class="notice_iteml1">{{item.date}}</view>
+     </view>
+    </view>
+  
+		<view class="content">
+			<template is="wxParse" data="{{wxParseData}}" />
+		</view>
+	</view>
+</view>

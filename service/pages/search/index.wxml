@@ -1,0 +1,42 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class="background-image index">
+  <image src="/images/more/result_bg.jpg"></image>
+</view>
+<view class="container">
+    <view class="search-view" style="background:{{ scrollTop === 0 ?'-webkit-linear-gradient(top, rgba(105,195,170, 1), rgba(105,195,170, 0.3))' :( scrollTop<200 ? 'rgba(105,195,170,'+(scrollTop/400+0.3) +')' : 'rgba(105,195,170,1)')  }} ">
+    <view class="search-content">
+      <view class="input-box first-box" catchtap="open">
+        <view class="description">地区</view>
+        <view class="add-input active" bindtap="open">{{province}}-{{city}}        </view>
+      <image src="/images/more/index_location.jpg"></image>
+    </view>
+    </view>
+  </view>
+</view>
+<!--searchDetilas-->
+<view class="content">
+    <view wx:if="{{wxParseData ? true : false}}"> 
+      	<template is="wxParse" data="{{wxParseData}}" />
+    </view>
+    <view wx:else>
+      <view class="no-order">
+        <image src="/images/order-details/zanwushuju.png" class="no-order-img"></image>
+        <view class="text">暂无数据</view>
+     </view>
+    </view>	
+</view>
+<!--地区自定义picker-->
+<view class="citypicker" wx:if="{{condition}}">
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange" class="citybody">
+    <view class="cityheader">
+      <view bindtap="close" class="city-cancel">取消</view>
+      <view bindtap="done" class="city-true">确定</view>
+    </view>
+    <picker-view-column>
+      <view wx:for="{{provinces}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{citys}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>

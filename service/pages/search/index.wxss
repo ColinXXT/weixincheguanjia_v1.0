@@ -1,0 +1,164 @@
+/**index.wxss**/
+@import '../../wxParse/wxParse.wxss';
+.container {
+  background-color: #F2f2f2;
+  min-height: 100%;
+}
+.no-order{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    top: 88rpx;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 203rpx;
+    background-color: #F2f2f2;
+}
+.no-order-img{
+    width: 167rpx;
+    height: 96rpx;
+    margin-bottom: 31rpx;
+}
+.no-order .text{
+    font-size:28rpx;
+    color:#999999;
+    text-align: center
+}
+.search-view{
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  z-index:500;
+  width: 100%;
+  height: 100rpx;
+  background: gray;
+  display: flex;
+  flex-direction: column;
+}
+.search-content{
+   background: white;
+   width:650rpx;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding-top: auto;
+   padding-left: 20rpx;
+   padding-bottom: auto;
+   margin: auto;
+   height: 70rpx;
+   border-radius:5px 5px;
+}
+.input-box image{
+  width: 32rpx;
+  height: 42rpx;
+}
+.first-box{
+  /* margin-top: 80rpx; */
+  z-index: 10;
+}
+.input-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #999;
+  height: 80rpx;
+  width: 572rpx;
+  font-size: 32rpx;
+  /* margin-left: 40rpx; */
+}
+.description {
+  width: 165rpx;
+  text-align: left;
+  line-height: 80rpx;
+}
+.add-input {
+  width: 355rpx;
+  color:#b2b2b2;
+  font-weight:600;
+  font-size: 31rpx;
+}
+
+.active{
+  color: #000;
+}
+.select-icon{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+.search-input{
+  width: 500rpx;
+  font-size: 28rpx;
+}
+.notice_iteml {
+  padding-left: 25rpx;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  font-size: 26rpx;
+  width: 200rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #999;
+}
+
+.citypickers {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  background-color: red;
+}
+
+.citybody {
+  position: fixed;
+  bottom: 0px;
+  background-color: #fff;
+  z-index: 70;
+}
+
+.cityheader {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 4;
+}
+
+.city-cancel {
+  float: left;
+  margin: 20rpx;
+  color: #818181;
+}
+
+.city-true {
+  float: right;
+  margin: 20rpx;
+  color: #2fb42e;
+}
+
+.section .picker {
+  background-color: #fff;
+  border-bottom: 1px #d9d9d9 solid;
+  border-top: 1px #d9d9d9 solid;
+  padding: 20rpx;
+}
+.background-image {
+  position: absolute;
+  top: -128rpx;
+  left: 0;
+  width: 750rpx;
+  height: 1334rpx;
+  z-index: -10;
+}
+
+.background-image image {
+  width: 750rpx;
+  height: auto;
+}
+.content{
+	padding: 10rpx;
+	white-space: pre-line;
+  padding-top:100rpx;
+}

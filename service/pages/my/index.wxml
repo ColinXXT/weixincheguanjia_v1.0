@@ -1,0 +1,31 @@
+<view class="container">
+	<view class="userinfo">
+		<image wx:if="{{userInfo && userInfo.avatarUrl}}" class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"></image>
+		<text class="userinfo-nickname">{{ userInfo.nickName }}</text>
+	</view>
+
+  <view class="my-item">
+  <image  class = "left" src = "../../images/my/bmcw-wzlist-icon.png"mode = "widthFix" />
+    <navigator url="/pages/order-list/index?vid=chewu" hover-class="navigator-hover">我的车务订单</navigator>
+  </view>
+  <view class="my-item">
+   <image  class = "left" src = "../../images/my/bmcw-orderlist-icon.png" mode = "widthFix"/>
+    <navigator url="/pages/order-list/index?vid=weizhang" hover-class="navigator-hover">我的违章订单</navigator>
+  </view>
+  <view wx:if="{{!userMobile}}" class="my-item" style="border:none;padding-right:150rpx;width:auto;">
+    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">绑定手机号码</button>
+  </view>
+  <view wx:if="{{userMobile}}" class="my-item" style="border:none;padding-right:150rpx;width:auto;">
+    {{userMobile}}
+  </view>
+  <view style="height:20rpx;background: #eee;width:100%;"></view>
+  <!--<view class="about" bindtap="calling">
+    <image src = "../../images/my/tel-call-top.png" mode = "widthFix"/>
+  </view>-->
+  <view style="height:20rpx;background: #eee;width:100%;"></view>
+
+  <view class="my-item" style="border:none;padding:0rpx;margin:0rpx;background:none;border:none;height:auto;line-height:auto;"> 
+    <button style='background: #69C3AA;' type="warn" bindtap="relogin">重新授权登录</button>
+    
+  </view>
+</view>
